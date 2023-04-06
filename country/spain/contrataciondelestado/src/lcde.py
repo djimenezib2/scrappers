@@ -66,7 +66,7 @@ class LCDE:
             item = soup.find(element, id=re.compile(id_text))
             return item.get_text()
         except:
-            self.notify_error('Contrataciones del Estado: Error parsing element ' + id_text + ' from url ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: " + id_text, "error")
+            self.notify_error('Contrataciones del Estado: Error parsing element ' + id_text + ' from url ' + self.url_fuente)
             return ''
 
     def find_text_by_id(self, soup, element, id_text):
@@ -74,7 +74,6 @@ class LCDE:
             item = soup.find(element, id=re.compile(id_text))
             return item.get_text()
         except:
-            # self.notify_error('Contrataciones del Estado: Error parsing element ' + id_text, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: " + id_text, "warning")
             return ''
 
     def find_url(self, soup, element, id_text):
@@ -85,7 +84,6 @@ class LCDE:
         locations = asyncio.run(locationRepo.getLocationFromTokens(tokens))
         return locations
 
-    # self.find_element_text(contenedor, "h1", "class", "notranslate")
     def find_text_by_element_text(self, soup, element, attribute_name, attribute_text):
         item = soup.select_one(element+'['+attribute_name+'*="'+attribute_text+'"]')
         return item.get_text() if item else ''
@@ -224,14 +222,8 @@ class LCDE:
         else:
             return biddersNumber
 
-    def notify_error(self, bugsnagMessage, errorMessage, severity):
-        try:
-            if os.environ['ENVIRONMENT'] == 'production':
-                bugsnag.notify(Exception(bugsnagMessage), severity=severity)
-            else:
-                print(errorMessage)
-        except:
-            print(errorMessage)
+    def notify_error(self, errorMessage):
+        print(errorMessage)
 
     def is_valid(self):
         return bool(self.expediente) and bool(self.objeto_del_contrato) and bool(self.estado_de_la_licitación)

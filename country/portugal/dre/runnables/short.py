@@ -1,7 +1,5 @@
 import sys
 import time
-import bugsnag
-import os
 from datetime import datetime
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -17,12 +15,7 @@ from driver import *
 from ldre import LDRE
 from runnable import *
 
-if os.environ['ENVIRONMENT'] == 'production':
-    bugsnag.configure(
-        api_key="31adc527bd20e55d8b1a9672f181b2e1",
-        project_root=os.path.abspath("runnables"),
-    )
-
+# start
 print('start...')
 start = datetime.now()
 
@@ -85,7 +78,10 @@ while(currentPage <= pages):
     currentPage += 1
 
 driver.quit()
+
+# manage runnable
 end = datetime.now()
 store_runnable(start, end, 1, 'Diário da República Electrónico', 'short')
 
+# end
 print('...finished')

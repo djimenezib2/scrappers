@@ -66,8 +66,7 @@ class LDRE:
         # self.documents                                          = self.find_documents(soup)
         # self.sheets                                             = self.get_sheets()
         self.match                                              = match
-        # #...
-        save_html(soup, self.expediente)
+        #...
         self.store()
 
 
@@ -137,7 +136,7 @@ class LDRE:
 
             return info
         except:
-            self.notify_error('DRE: Error populating dictionary', "ERROR!!!\n---------------------\nURL:" + url + "\nError populating dictionary", "error")
+            self.notify_error('DRE: Error populating dictionary')
 
 
     def find_publication_date(self, soup):
@@ -155,14 +154,8 @@ class LDRE:
         locations = asyncio.run(locationRepo.getLocationFromTokens(tokens))
         return locations
 
-    def notify_error(self, bugsnagMessage, errorMessage, severity):
-        try:
-            if os.environ['ENVIRONMENT'] == 'production':
-                bugsnag.notify(Exception(bugsnagMessage), severity=severity)
-            else:
-                print(errorMessage)
-        except:
-            print(errorMessage)
+    def notify_error(self, errorMessage):
+        print(errorMessage)
 
     def is_valid(self):
         return bool(self.expediente) and bool(self.objeto_del_contrato) # and bool(self.estado_de_la_licitación)

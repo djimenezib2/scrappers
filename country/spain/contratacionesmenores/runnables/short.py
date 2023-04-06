@@ -5,8 +5,6 @@
 
 import sys
 import time
-import bugsnag
-import os
 from datetime import datetime
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -22,12 +20,6 @@ from lcm import LCM
 from runnable import *
 
 # start
-if os.environ['ENVIRONMENT'] == 'production':
-    bugsnag.configure(
-        api_key="31adc527bd20e55d8b1a9672f181b2e1",
-        project_root=os.path.abspath("runnables"),
-    )
-
 print('start...')
 counter = 0
 start = datetime.now()

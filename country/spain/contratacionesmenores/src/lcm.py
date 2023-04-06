@@ -63,7 +63,7 @@ class LCM:
             item = soup.find(element, id=re.compile(id_text))
             return item.get_text()
         except:
-            self.notify_error('Contrataciones Menores: Error parsing element ' + id_text + ' from url ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: " + id_text, "error")
+            self.notify_error('Contrataciones Menores: Error parsing element ' + id_text + ' from url ' + self.url_fuente)
             return ''
 
     def find_text_by_id(self, soup, element, id_text):
@@ -71,7 +71,6 @@ class LCM:
             item = soup.find(element, id=re.compile(id_text))
             return item.get_text()
         except:
-            # self.notify_error('Contrataciones Menores: Error parsing element ' + id_text, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: " + id_text, "warning")
             return ''
 
     def find_url(self, soup, element, id_text):
@@ -215,14 +214,8 @@ class LCM:
 
         return sheets
 
-    def notify_error(self, bugsnagMessage, errorMessage, severity):
-        try:
-            if os.environ['ENVIRONMENT'] == 'production':
-                bugsnag.notify(Exception(bugsnagMessage), severity=severity)
-            else:
-                print(errorMessage)
-        except:
-            print(errorMessage)
+    def notify_error(self, errorMessage):
+        print(errorMessage)
 
     def is_valid(self):
         return bool(self.expediente) and bool(self.objeto_del_contrato) # and bool(self.estado_de_la_licitación)

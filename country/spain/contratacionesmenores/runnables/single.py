@@ -4,8 +4,6 @@
 ############################################################################################################################
 
 import sys
-import bugsnag
-import os
 from datetime import datetime
 from dotenv import load_dotenv
 
@@ -18,12 +16,6 @@ from lcm import LCM
 from runnable import *
 
 # start
-if os.environ['ENVIRONMENT'] == 'production':
-    bugsnag.configure(
-        api_key="31adc527bd20e55d8b1a9672f181b2e1",
-        project_root=os.path.abspath("runnables"),
-    )
-
 print('start...')
 start = datetime.now()
 

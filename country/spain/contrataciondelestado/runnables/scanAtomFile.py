@@ -4,7 +4,6 @@
 ############################################################################################################################
 
 import sys
-import bugsnag
 import os
 import re
 import os.path
@@ -30,12 +29,6 @@ def format_date(date:str):
     return parts[2] + '/' + parts[1] + '/' + parts[0] + ' ' + parts[3] + ':' + parts[4] + ':' + parts[5]
 
 #start
-if os.environ['ENVIRONMENT'] == 'production':
-    bugsnag.configure(
-        api_key="31adc527bd20e55d8b1a9672f181b2e1",
-        project_root=os.path.abspath("runnables"),
-    )
-
 print('start...')
 counter = 0
 start = datetime.now()

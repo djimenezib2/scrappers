@@ -56,7 +56,6 @@ class LCM:
         self.sheets                                             = self.get_sheets()
         self.match                                              = match
         #...
-        save_html(soup, self.expediente)
         self.store()
 
     def must_find_text_by_id(self, soup, element, id_text):

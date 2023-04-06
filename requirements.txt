@@ -1,0 +1,1 @@
+python-dotenv requests selenium webdriver-manager beautifulsoup4

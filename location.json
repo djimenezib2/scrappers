@@ -1,0 +1,1322 @@
+{
+  "españa": {
+    "country": "ES"
+  },
+  "es": {
+    "country": "ES"
+  },
+  "albacete": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Albacete"
+  },
+  "es421": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Albacete"
+  },
+  "tenerife": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Santa Cruz de Tenerife",
+    "island": "Tenerife"
+  },
+  "es709": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Santa Cruz de Tenerife",
+    "island": "Tenerife"
+  },
+  "el hierro": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Santa Cruz de Tenerife",
+    "island": "El Hierro"
+  },
+  "es703": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Santa Cruz de Tenerife",
+    "island": "El Hierro"
+  },
+  "santiago del teide": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Santa Cruz de Tenerife",
+    "island": "Tenerife",
+    "town": "Santiago del Teide"
+  },
+  "huesca": {
+    "country": "ES",
+    "autonomousCommunity": "Aragón",
+    "province": "Huesca"
+  },
+  "es241": {
+    "country": "ES",
+    "autonomousCommunity": "Aragón",
+    "province": "Huesca"
+  },
+  "jaca": {
+    "country": "ES",
+    "autonomousCommunity": "Aragón",
+    "province": "Huesca",
+    "town": "Jaca"
+  },
+  "aragon": {
+    "country": "ES",
+    "autonomousCommunity": "Aragón"
+  },
+  "es24": {
+    "country": "ES",
+    "autonomousCommunity": "Aragón"
+  },
+  "madrid": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad de Madrid",
+    "province": "Madrid"
+  },
+  "salamanca": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Salamanca"
+  },
+  "es415": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Salamanca"
+  },
+  "jaen": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Jaén"
+  },
+  "es616": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Jaén"
+  },
+  "barcelona": {
+    "country": "ES",
+    "autonomousCommunity": "Cataluña",
+    "province": "Barcelona"
+  },
+  "es511": {
+    "country": "ES",
+    "autonomousCommunity": "Cataluña",
+    "province": "Barcelona"
+  },
+  "catalunya": {
+    "country": "ES",
+    "autonomousCommunity": "Cataluña"
+  },
+  "es51": {
+    "country": "ES",
+    "autonomousCommunity": "Cataluña"
+  },
+  "cerdanyola del valles": {
+    "country": "ES",
+    "autonomousCommunity": "Cataluña",
+    "province": "Barcelona",
+    "town": "Sardañola del Vallés"
+  },
+  "cantabria": {
+    "country": "ES",
+    "autonomousCommunity": "Cantabria",
+    "province": "Cantabria"
+  },
+  "es13": {
+    "country": "ES",
+    "autonomousCommunity": "Cantabria",
+    "province": "Cantabria"
+  },
+  "es130": {
+    "country": "ES",
+    "autonomousCommunity": "Cantabria",
+    "province": "Cantabria"
+  },
+  "santander": {
+    "country": "ES",
+    "autonomousCommunity": "Cantabria",
+    "province": "Cantabria",
+    "town": "Santander"
+  },
+  "valladolid": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Valladolid"
+  },
+  "es418": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Valladolid"
+  },
+  "teruel": {
+    "country": "ES",
+    "autonomousCommunity": "Aragón",
+    "province": "Teruel"
+  },
+  "es242": {
+    "country": "ES",
+    "autonomousCommunity": "Aragón",
+    "province": "Teruel"
+  },
+  "avila": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Ávila"
+  },
+  "es411": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Ávila"
+  },
+  "burgos": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Burgos"
+  },
+  "es412": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Burgos"
+  },
+  "canarias": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias"
+  },
+  "es70": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias"
+  },
+  "valencia": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Valenciana",
+    "province": "Valencia"
+  },
+  "es523": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Valenciana",
+    "province": "Valencia"
+  },
+  "zaragoza": {
+    "country": "ES",
+    "autonomousCommunity": "Aragón",
+    "province": "Zaragoza"
+  },
+  "es243": {
+    "country": "ES",
+    "autonomousCommunity": "Aragón",
+    "province": "Zaragoza"
+  },
+  "cuenca": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Cuenca"
+  },
+  "es423": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Cuenca"
+  },
+  "alicante": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Valenciana",
+    "province": "Alicante"
+  },
+  "alacant": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Valenciana",
+    "province": "Alicante"
+  },
+  "es521": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Valenciana",
+    "province": "Alicante"
+  },
+  "badajoz": {
+    "country": "ES",
+    "autonomousCommunity": "Extremadura",
+    "province": "Badajoz"
+  },
+  "es431": {
+    "country": "ES",
+    "autonomousCommunity": "Extremadura",
+    "province": "Badajoz"
+  },
+  "sevilla": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Sevilla"
+  },
+  "es618": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Sevilla"
+  },
+  "segovia": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Segovia"
+  },
+  "es416": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Segovia"
+  },
+  "cadiz": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Cadiz"
+  },
+  "es612": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Cadiz"
+  },
+  "yebes": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Guadalajara",
+    "town": "Yebes"
+  },
+  "guadalajara": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Guadalajara"
+  },
+  "es424": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Guadalajara"
+  },
+  "huelva": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Huelva"
+  },
+  "es615": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Huelva"
+  },
+  "campus de cantoblanco. madrid.": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad de Madrid",
+    "province": "Madrid",
+    "town": "Madrid"
+  },
+  "ciudad real": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Ciudad Real"
+  },
+  "es422": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Ciudad Real"
+  },
+  "comunidad de madrid": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad de Madrid"
+  },
+  "es30": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad de Madrid"
+  },
+  "es300": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad de Madrid"
+  },
+  "almeria": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Almería"
+  },
+  "es611": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Almería"
+  },
+  "pozuelo de alarcon": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad de Madrid",
+    "province": "Madrid",
+    "town": "Pozuelo de Alarcón"
+  },
+  "leon": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "León"
+  },
+  "es413": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "León"
+  },
+  "zamora": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Zamora"
+  },
+  "es419": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Zamora"
+  },
+  "melilla": {
+    "country": "ES",
+    "autonomousCommunity": "Melilla",
+    "province": "Melilla",
+    "town": "Melilla"
+  },
+  "es640": {
+    "country": "ES",
+    "autonomousCommunity": "Melilla",
+    "province": "Melilla",
+    "town": "Melilla"
+  },
+  "es64": {
+    "country": "ES",
+    "autonomousCommunity": "Melilla",
+    "province": "Melilla",
+    "town": "Melilla"
+  },
+  "islas baleares": {
+    "country": "ES",
+    "autonomousCommunity": "Islas Baleares"
+  },
+  "es53": {
+    "country": "ES",
+    "autonomousCommunity": "Islas Baleares"
+  },
+  "es531": {
+    "country": "ES",
+    "autonomousCommunity": "Islas Baleares"
+  },
+  "mallorca": {
+    "country": "ES",
+    "autonomousCommunity": "Islas Baleares",
+    "island": "Mallorca"
+  },
+  "es532": {
+    "country": "ES",
+    "autonomousCommunity": "Islas Baleares",
+    "island": "Mallorca"
+  },
+  "ibiza": {
+    "country": "ES",
+    "autonomousCommunity": "Islas Baleares",
+    "island": "Ibiza"
+  },
+  "formentera": {
+    "country": "ES",
+    "autonomousCommunity": "Islas Baleares",
+    "island": "Formentera"
+  },
+  "tarragona": {
+    "country": "ES",
+    "autonomousCommunity": "Cataluña",
+    "province": "Tarragona"
+  },
+  "es514": {
+    "country": "ES",
+    "autonomousCommunity": "Cataluña",
+    "province": "Tarragona"
+  },
+  "toledo": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Toledo"
+  },
+  "es425": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Toledo"
+  },
+  "castilla": {
+    "country": "ES"
+  },
+  "la mancha": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla-La Mancha"
+  },
+  "es42": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla-La Mancha"
+  },
+  "ceuta": {
+    "country": "ES",
+    "autonomousCommunity": "Ceuta",
+    "province": "Ceuta",
+    "town": "Ceuta"
+  },
+  "es630": {
+    "country": "ES",
+    "autonomousCommunity": "Ceuta",
+    "province": "Ceuta",
+    "town": "Ceuta"
+  },
+  "es63": {
+    "country": "ES",
+    "autonomousCommunity": "Ceuta",
+    "province": "Ceuta",
+    "town": "Ceuta"
+  },
+  "la laguna": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad de Madrid",
+    "province": "Madrid",
+    "town": "Parla"
+  },
+  "fuenlabrada": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad de Madrid",
+    "province": "Madrid",
+    "town": "Fuenlabrada"
+  },
+  "murcia": {
+    "country": "ES",
+    "autonomousCommunity": "Región de Murcia",
+    "province": "Murcia"
+  },
+  "es620": {
+    "country": "ES",
+    "autonomousCommunity": "Región de Murcia",
+    "province": "Murcia"
+  },
+  "es62": {
+    "country": "ES",
+    "autonomousCommunity": "Región de Murcia",
+    "province": "Murcia"
+  },
+  "alguazas": {
+    "country": "ES",
+    "autonomousCommunity": "Región de Murcia",
+    "province": "Murcia",
+    "town": "Alguazas"
+  },
+  "caceres": {
+    "country": "ES",
+    "autonomousCommunity": "Extremadura",
+    "province": "Cáceres"
+  },
+  "es432": {
+    "country": "ES",
+    "autonomousCommunity": "Extremadura",
+    "province": "Cáceres"
+  },
+  "comunidad valenciana": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Valenciana"
+  },
+  "es52": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Valenciana"
+  },
+  "asturias": {
+    "country": "ES",
+    "autonomousCommunity": "Principado de Asturias"
+  },
+  "es12": {
+    "country": "ES",
+    "autonomousCommunity": "Principado de Asturias"
+  },
+  "es120": {
+    "country": "ES",
+    "autonomousCommunity": "Principado de Asturias"
+  },
+  "malaga": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Málaga"
+  },
+  "es617": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Málaga"
+  },
+  "castilla y leon": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León"
+  },
+  "es41": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León"
+  },
+  "cordoba": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Córdoba"
+  },
+  "es613": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Córdoba"
+  },
+  "extremadura": {
+    "country": "ES",
+    "autonomousCommunity": "Extremadura"
+  },
+  "es43": {
+    "country": "ES",
+    "autonomousCommunity": "Extremadura"
+  },
+  "merida": {
+    "country": "ES",
+    "autonomousCommunity": "Extremadura",
+    "province": "Badajoz",
+    "town": "Mérida"
+  },
+  "castellon": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Valenciana",
+    "province": "Castellón"
+  },
+  "es522": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Valenciana",
+    "province": "Castellón"
+  },
+  "castello": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Valenciana",
+    "province": "Castellón"
+  },
+  "castellon de la plana": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Valenciana",
+    "province": "Castellón",
+    "town": "Castellón de la Plana"
+  },
+  "fuerteventura": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Las Palmas",
+    "island": "Fuerteventura"
+  },
+  "es704": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Las Palmas",
+    "island": "Fuerteventura"
+  },
+  "granada": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Granada"
+  },
+  "es614": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Granada"
+  },
+  "la rioja": {
+    "country": "ES",
+    "autonomousCommunity": "La Rioja"
+  },
+  "es23": {
+    "country": "ES",
+    "autonomousCommunity": "La Rioja"
+  },
+  "es230": {
+    "country": "ES",
+    "autonomousCommunity": "La Rioja"
+  },
+  "terror": {},
+  "las palmas de gran canaria": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Las Palmas",
+    "island": "Gran canaria",
+    "town": "Las Palmas de Gran Canaria"
+  },
+  "la gomera": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Santa Cruz de Tenerife",
+    "island": "La Gomera"
+  },
+  "es706": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Santa Cruz de Tenerife",
+    "island": "La Gomera"
+  },
+  "naquera": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Valenciana",
+    "province": "Valencia",
+    "town": "Náquera"
+  },
+  "telde": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Las Palmas",
+    "island": "Gran canaria",
+    "town": "Telde"
+  },
+  "gran canaria": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Las Palmas",
+    "island": "Gran canaria"
+  },
+  "es705": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Las Palmas",
+    "island": "Gran canaria"
+  },
+  "gava": {
+    "country": "ES",
+    "autonomousCommunity": "Cataluña",
+    "province": "Barcelona",
+    "town": "Gavá"
+  },
+  "andalucia": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía"
+  },
+  "es61": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía"
+  },
+  "a coruña": {
+    "country": "ES",
+    "autonomousCommunity": "Galicia",
+    "province": "La Coruña"
+  },
+  "es111": {
+    "country": "ES",
+    "autonomousCommunity": "Galicia",
+    "province": "La Coruña"
+  },
+  "navarra": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Foral de Navarra"
+  },
+  "es22": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Foral de Navarra"
+  },
+  "es220": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Foral de Navarra"
+  },
+  "girona": {
+    "country": "ES",
+    "autonomousCommunity": "Cataluña",
+    "province": "Gerona"
+  },
+  "es512": {
+    "country": "ES",
+    "autonomousCommunity": "Cataluña",
+    "province": "Gerona"
+  },
+  "lleida": {
+    "country": "ES",
+    "autonomousCommunity": "Cataluña",
+    "province": "Lérida"
+  },
+  "es513": {
+    "country": "ES",
+    "autonomousCommunity": "Cataluña",
+    "province": "Lérida"
+  },
+  "soria": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Soria"
+  },
+  "es417": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Soria"
+  },
+  "santa marina del rey": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "León",
+    "town": "Santa Marina del Rey"
+  },
+  "mondejar": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Guadalajara",
+    "town": "Mondéjar"
+  },
+  "rionansa": {
+    "country": "ES",
+    "autonomousCommunity": "Cantabria",
+    "province": "Cantabria",
+    "town": "Rionansa"
+  },
+  "betera": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Valenciana",
+    "province": "València",
+    "town": "Bétera"
+  },
+  "puebla de don rodrigo": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla-La Mancha",
+    "province": "Ciudad Real",
+    "town": "Puebla de Don Rodrigo"
+  },
+  "gipuzkoa": {
+    "country": "ES",
+    "autonomousCommunity": "Pais Vasco",
+    "province": "Guipúzcoa"
+  },
+  "es212": {
+    "country": "ES",
+    "autonomousCommunity": "Pais Vasco",
+    "province": "Guipúzcoa"
+  },
+  "bizkaia": {
+    "country": "ES",
+    "autonomousCommunity": "Pais Vasco",
+    "province": "Vizcaya"
+  },
+  "es213": {
+    "country": "ES",
+    "autonomousCommunity": "Pais Vasco",
+    "province": "Vizcaya"
+  },
+  "santurtzi": {
+    "country": "ES",
+    "autonomousCommunity": "Pais Vasco",
+    "province": "Vizcaya",
+    "town": "Santurce"
+  },
+  "galicia": {
+    "country": "ES",
+    "autonomousCommunity": "Galicia"
+  },
+  "lugo": {
+    "country": "ES",
+    "autonomousCommunity": "Galicia",
+    "province": "Lugo"
+  },
+  "es112": {
+    "country": "ES",
+    "autonomousCommunity": "Galicia",
+    "province": "Lugo"
+  },
+  "es11": {
+    "country": "ES",
+    "autonomousCommunity": "Galicia"
+  },
+  "valle gran rey": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Santa Cruz de Tenerife",
+    "island": "Tenerife",
+    "town": "Valle Gran Rey"
+  },
+  "lanzarote": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Las Palmas",
+    "island": "Lanzarote"
+  },
+  "es708": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Las Palmas",
+    "island": "Lanzarote"
+  },
+  "herrera": {
+    "country": "ES",
+    "autonomousCommunity": "Andalucía",
+    "province": "Sevilla",
+    "town": "Herrera"
+  },
+  "pontevedra": {
+    "country": "ES",
+    "autonomousCommunity": "Galicia",
+    "province": "Pontevedra"
+  },
+  "es114": {
+    "country": "ES",
+    "autonomousCommunity": "Galicia",
+    "province": "Pontevedra"
+  },
+  "la palma": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Santa Cruz de Tenerife",
+    "island": "La Palma"
+  },
+  "es707": {
+    "country": "ES",
+    "autonomousCommunity": "Canarias",
+    "province": "Santa Cruz de Tenerife",
+    "island": "La Palma"
+  },
+  "orense": {
+    "country": "ES",
+    "autonomousCommunity": "Galicia",
+    "province": "Orense"
+  },
+  "es113": {
+    "country": "ES",
+    "autonomousCommunity": "Galicia",
+    "province": "Orense"
+  },
+  "menorca": {
+    "country": "ES",
+    "autonomousCommunity": "Islas Baleares",
+    "province": "Islas Baleares",
+    "island": "Menorca"
+  },
+  "es533": {
+    "country": "ES",
+    "autonomousCommunity": "Islas Baleares",
+    "province": "Islas Baleares",
+    "island": "Menorca"
+  },
+  "vizkaia": {
+    "country": "ES",
+    "autonomousCommunity": "Pais Vasco",
+    "province": "Vizcaya"
+  },
+  "maliaño": {
+    "country": "ES",
+    "autonomousCommunity": "Cantabria",
+    "town": "Maliaño"
+  },
+  "ponferrada": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "León",
+    "town": "Ponferrada"
+  },
+  "araba": {
+    "country": "ES",
+    "autonomousCommunity": "Pais Vasco",
+    "province": "Álava"
+  },
+  "alava": {
+    "country": "ES",
+    "autonomousCommunity": "Pais Vasco",
+    "province": "Álava"
+  },
+  "es211": {
+    "country": "ES",
+    "autonomousCommunity": "Pais Vasco",
+    "province": "Álava"
+  },
+  "pais vasco": {
+    "country": "ES",
+    "autonomousCommunity": "Pais Vasco"
+  },
+  "es21": {
+    "country": "ES",
+    "autonomousCommunity": "Pais Vasco"
+  },
+  "cubillos del sil": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "León",
+    "town": "Cubillos del Sil"
+  },
+  "san vicente de la barquera": {
+    "country": "ES",
+    "autonomousCommunity": "Cantabria",
+    "town": "San Vicente de la Barquera"
+  },
+  "borja": {
+    "country": "ES",
+    "autonomousCommunity": "Aragón",
+    "province": "Zaragoza",
+    "town": "Borja"
+  },
+  "palencia": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Palencia"
+  },
+  "es414": {
+    "country": "ES",
+    "autonomousCommunity": "Castilla y León",
+    "province": "Palencia"
+  },
+  "torrent": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Valenciana",
+    "province": "Valencia"
+  },
+  "garbinet alicante": {
+    "country": "ES",
+    "autonomousCommunity": "Comunidad Valenciana",
+    "province": "Alicante",
+    "town": "Alicante"
+  },
+  "at": {
+    "country": "AT"
+  },
+  "be": {
+    "country": "BE"
+  },
+  "bg": {
+    "country": "BG"
+  },
+  "hr": {
+    "country": "HR"
+  },
+  "cy": {
+    "country": "CY"
+  },
+  "cz": {
+    "country": "CZ"
+  },
+  "dk": {
+    "country": "DK"
+  },
+  "ee": {
+    "country": "EE"
+  },
+  "fi": {
+    "country": "FI"
+  },
+  "fr": {
+    "country": "FR"
+  },
+  "de": {
+    "country": "DE"
+  },
+  "el": {
+    "country": "EL"
+  },
+  "hu": {
+    "country": "HU"
+  },
+  "ie": {
+    "country": "IE"
+  },
+  "it": {
+    "country": "IT"
+  },
+  "lv": {
+    "country": "LV"
+  },
+  "lt": {
+    "country": "LT"
+  },
+  "lu": {
+    "country": "LU"
+  },
+  "mt": {
+    "country": "MT"
+  },
+  "nl": {
+    "country": "NL"
+  },
+  "pl": {
+    "country": "PL"
+  },
+  "pt": {
+    "country": "PT"
+  },
+  "ro": {
+    "country": "RO"
+  },
+  "sk": {
+    "country": "SK"
+  },
+  "si": {
+    "country": "SI"
+  },
+  "se": {
+    "country": "SE"
+  },
+  "uk": {
+    "country": "UK"
+  },
+  "is": {
+    "country": "IS"
+  },
+  "li": {
+    "country": "LI"
+  },
+  "no": {
+    "country": "NO"
+  },
+  "ch": {
+    "country": "CH"
+  },
+  "kh": {
+    "country": "KH"
+  },
+  "lr": {
+    "country": "LR"
+  },
+  "pt1": {
+    "country": "PT"
+  },
+  "pt2": {
+    "country": "PT",
+    "autonomousCommunity": "Región Autónoma de las Azores"
+  },
+  "pt20": {
+    "country": "PT",
+    "autonomousCommunity": "Región Autónoma de las Azores"
+  },
+  "pt200": {
+    "country": "PT",
+    "autonomousCommunity": "Región Autónoma de las Azores"
+  },
+  "pt3": {
+    "country": "PT",
+    "autonomousCommunity": "Región Autónoma de Madeira"
+  },
+  "pt30": {
+    "country": "PT",
+    "autonomousCommunity": "Región Autónoma de Madeira"
+  },
+  "pt300": {
+    "country": "PT",
+    "autonomousCommunity": "Región Autónoma de Madeira"
+  },
+  "pt11": {
+    "country": "PT",
+    "autonomousCommunity": "Norte"
+  },
+  "pt111": {
+    "country": "PT",
+    "autonomousCommunity": "Norte",
+    "province": "Minho-Lima"
+  },
+  "pt112": {
+    "country": "PT",
+    "autonomousCommunity": "Norte",
+    "province": "Cávado"
+  },
+  "pt113": {
+    "country": "PT",
+    "autonomousCommunity": "Norte",
+    "province": "Ave"
+  },
+  "pt114": {
+    "country": "PT",
+    "autonomousCommunity": "Norte",
+    "province": "Grande Porto"
+  },
+  "pt115": {
+    "country": "PT",
+    "autonomousCommunity": "Norte",
+    "province": "Támega"
+  },
+  "pt116": {
+    "country": "PT",
+    "autonomousCommunity": "Norte",
+    "province": "Entre Douro e Vouga"
+  },
+  "pt117": {
+    "country": "PT",
+    "autonomousCommunity": "Norte",
+    "province": "Duero"
+  },
+  "pt118": {
+    "country": "PT",
+    "autonomousCommunity": "Norte",
+    "province": "Alto Trás-os-Montes"
+  },
+  "pt119": {
+    "country": "PT",
+    "autonomousCommunity": "Norte",
+    "province": "Ave"
+  },
+  "pt11a": {
+    "country": "PT",
+    "autonomousCommunity": "Norte",
+    "province": "Área Metropolitana do Porto"
+  },
+  "pt11b": {
+    "country": "PT",
+    "autonomousCommunity": "Norte",
+    "province": "Alto Tâmega"
+  },
+  "pt11c": {
+    "country": "PT",
+    "autonomousCommunity": "Norte",
+    "province": "Tâmega e Sousa"
+  },
+  "pt11d": {
+    "country": "PT",
+    "autonomousCommunity": "Norte",
+    "province": "Terras de Trás-os-Montes"
+  },
+  "pt11e": {
+    "country": "PT",
+    "autonomousCommunity": "Norte",
+    "province": "Douro"
+  },
+  "pt17": {
+    "country": "PT",
+    "autonomousCommunity": "Lisboa"
+  },
+  "pt171": {
+    "country": "PT",
+    "autonomousCommunity": "Lisboa",
+    "province": "Gran Lisboa"
+  },
+  "pt172": {
+    "country": "PT",
+    "autonomousCommunity": "Lisboa",
+    "province": "Península de Setúbal"
+  },
+  "pt15": {
+    "country": "PT",
+    "autonomousCommunity": "Algarve"
+  },
+  "pt150": {
+    "country": "PT",
+    "autonomousCommunity": "Algarve",
+    "province": "Algarve"
+  },
+  "pt18": {
+    "country": "PT",
+    "autonomousCommunity": "Alentejo"
+  },
+  "pt181": {
+    "country": "PT",
+    "autonomousCommunity": "Alentejo",
+    "province": "Alentejo Litoral"
+  },
+  "pt182": {
+    "country": "PT",
+    "autonomousCommunity": "Alentejo",
+    "province": "Alto Alentejo"
+  },
+  "pt183": {
+    "country": "PT",
+    "autonomousCommunity": "Alentejo",
+    "province": "Alentejo Central"
+  },
+  "pt184": {
+    "country": "PT",
+    "autonomousCommunity": "Alentejo",
+    "province": "Baixo Alentejo"
+  },
+  "pt185": {
+    "country": "PT",
+    "autonomousCommunity": "Alentejo",
+    "province": "Lezíria do Tejo"
+  },
+  "pt16": {
+    "country": "PT",
+    "autonomousCommunity": "Centro"
+  },
+  "pt161": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Baixo Vouga"
+  },
+  "pt162": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Baixo Mondego"
+  },
+  "pt163": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Pinhal Litoral"
+  },
+  "pt164": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Pinhal Interior Norte"
+  },
+  "pt165": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Dão-Lafões"
+  },
+  "pt166": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Pinhal Interior Sul"
+  },
+  "pt167": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Sierra de la Estrella"
+  },
+  "pt168": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Beira Interior Norte"
+  },
+  "pt169": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Beira Interior Sul"
+  },
+  "pt16a": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Cova da Beira"
+  },
+  "pt16b": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Oeste"
+  },
+  "pt16c": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Medio Tejo"
+  },
+  "pt16d": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Região de Aveiro"
+  },
+  "pt16e": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Região de Coimbra"
+  },
+  "pt16f": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Região de Leiria"
+  },
+  "pt16g": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Viseu Dão-Lafões"
+  },
+  "pt16h": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Beira Baixa"
+  },
+  "pt16i": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Medio Tejo"
+  },
+  "pt16j": {
+    "country": "PT",
+    "autonomousCommunity": "Centro",
+    "province": "Beiras e Serra da Estrela"
+  },
+  "al": {
+    "country": "AL"
+  },
+  "me": {
+    "country": "ME"
+  },
+  "mk": {
+    "country": "MK"
+  },
+  "rs": {
+    "country": "RS"
+  },
+  "tr": {
+    "country": "TR"
+  }
+}

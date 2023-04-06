@@ -17,11 +17,11 @@ from functions import *
 
 class LBOE:
 
-    def __init__(self, url:str, match):
+    def __init__(self, url, match):
         soup = get_soup_from_url(url, "lxml")
 
         locationRepository = JSONLocationRepository("../../../../location.json")
-        titulo:str = self.find_text_by_tag(soup, "titulo")
+        titulo = self.find_text_by_tag(soup, "titulo")
         
         # ...
         self.url_fuente                                          = url
@@ -50,7 +50,6 @@ class LBOE:
         #self.sheets                                             = self.get_sheets()
         self.match                                              = match
         # ...
-        save_html(soup, self.expediente)
         self.store()
 
     def find_text_by_tag(self, soup, tag):
@@ -76,7 +75,7 @@ class LBOE:
             else:
                 return "No definido"
         except:
-            self.notify_error('BOE: Error parsing Status from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: STATUS\n", "error")
+            self.notify_error('BOE: Error parsing Status from ' + self.url_fuente)
             return ""
 
     def get_cpv_codes(self, soup):
@@ -113,7 +112,6 @@ class LBOE:
 
             return codes
         except:
-            # self.notify_error('BOE: Error parsing CPV Codes from ' + self.url_fuente, "WARNING!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: CPV CODES\n", "warning")
             return ""
 
     def get_data(self, soup, data):
@@ -132,7 +130,6 @@ class LBOE:
 
                 return ','.join(values) # return list of values on a string separated by , at the moment there have been no cases with more than one value, addapt rest of the code if it appears with more than one
             except:
-                # self.notify_error('BOE: Error parsing Success Bidder Organization from ' + self.url_fuente, "WARNING!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: SUCCESS BIDDER ORGANIZATION\n", "warning")
                 return None
 
         elif (data == "tipo_procedimiento"):
@@ -158,7 +155,7 @@ class LBOE:
                 except AttributeError:
                     return "No definido"
             except:
-                self.notify_error('BOE: Error parsing Procedure from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: PROCEDURE\n", "error")
+                self.notify_error('BOE: Error parsing Procedure from ' + self.url_fuente)
                 return "No definido"
         else:
             return ""
@@ -175,14 +172,14 @@ class LBOE:
                             expediente = el.split(": ")[1]
                             return expediente
                 except:
-                    self.notify_error('BOE: Error parsing Expedient from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: EXPEDIENT\n", "error")
+                    self.notify_error('BOE: Error parsing Expedient from ' + self.url_fuente)
                     return ""
 
             elif element == "objeto":
                 try:
                     return soup.find("titulo").text
                 except:
-                    self.notify_error('BOE: error parsing Name from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: NAME\n", "error")
+                    self.notify_error('BOE: error parsing Name from ' + self.url_fuente)
                     return ""
 
         else:
@@ -212,7 +209,7 @@ class LBOE:
                     
                     return expediente
                 except:
-                    self.notify_error('BOE: Error parsing Expedient from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: EXPEDIENT\n", "error")
+                    self.notify_error('BOE: Error parsing Expedient from ' + self.url_fuente)
                     return ""
 
             elif element == "objeto":
@@ -234,7 +231,7 @@ class LBOE:
 
                         return objeto
                 except:
-                    self.notify_error('BOE: error parsing Name from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: NAME\n", "error")
+                    self.notify_error('BOE: error parsing Name from ' + self.url_fuente)
                     return ""
 
             elif element == "adjudicador":
@@ -250,7 +247,6 @@ class LBOE:
                                 organismo = el.split("Organismo: ")[1]
                                 return organismo
                     except:
-                        # self.notify_error('BOE: Error parsing Contracting Organization from ' + self.url_fuente, "WARNING!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: CONTRACTING ORGANIZATION\n", "warning")
                         return ""
             else:
                 return ""
@@ -302,7 +298,6 @@ class LBOE:
             # codes = self.format_locations_codes(codes)
             # return codes
         except:
-            # self.notify_error('BOE: Error parsing Location Codes from ' + self.url_fuente, "WARNING!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: LOCATION CODES\n", "warning")
             return ""
 
     def get_bidders_number(self, soup):
@@ -310,7 +305,6 @@ class LBOE:
             data = list(soup.select_one('dt:-soup-contains("Número de ofertas recibidas:") + dd').stripped_strings)
             return data[0][:-1]
         except:
-            # self.notify_error('BOE: Error parsing Bidders Number from ' + self.url_fuente, "WARNING!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: BIDDERS NUMBER\n", "warning")
             return None
 
     def format_locations_codes(self, codes):
@@ -339,7 +333,6 @@ class LBOE:
             try:
                 data = list(soup.select_one('dt:-soup-contains("Valor de la oferta seleccionada") + dd').stripped_strings)
             except:
-                # self.notify_error('BOE: Error parsing Contract Value from ' + self.url_fuente, "WARNING!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: CONTRACT VALUE\n", "warning")
                 return None
         
         value = data[0].split(" ")[0]
@@ -350,14 +343,8 @@ class LBOE:
         formattedNumber = float(number.replace(".", "").replace(",", "."))
         return formattedNumber
 
-    def notify_error(self, bugsnagMessage, errorMessage, severity):
-        try:
-            if os.environ['ENVIRONMENT'] == 'production':
-                bugsnag.notify(Exception(bugsnagMessage), severity=severity)
-            else:
-                print(errorMessage)
-        except:
-            print(errorMessage)
+    def notify_error(self, errorMessage):
+        print(errorMessage)
 
     def is_valid(self):
         return bool(self.expediente) and bool(self.objeto_del_contrato) # and bool(self.estado_de_la_licitación)

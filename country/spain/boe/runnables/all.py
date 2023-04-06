@@ -4,8 +4,6 @@
 ############################################################################################################################
 
 import sys
-import bugsnag
-import os
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 
@@ -23,12 +21,6 @@ def dateToString(date):
     return stringDate
 
 # start
-if os.environ['ENVIRONMENT'] == 'production':
-    bugsnag.configure(
-        api_key="31adc527bd20e55d8b1a9672f181b2e1",
-        project_root=os.path.abspath("runnables"),
-    )
-
 print("start...")
 counter = 0
 start = datetime.now()

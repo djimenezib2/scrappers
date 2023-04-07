@@ -1,16 +1,16 @@
 ############################################################################################################################
-# This script checks all tenders from 5 years from now.
-# It will be executed once in production
+# This script checks all the pages from the latest tenders.
+# It will be executed every month
 ############################################################################################################################
 
 import sys
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 
-load_dotenv("../../../../.env")
+load_dotenv("../../.env")
 
 sys.path.append("../src")
-sys.path.append("../../../../utils")
+sys.path.append("../../utils")
 
 from driver import *
 from lboe import LBOE
@@ -28,11 +28,11 @@ start = datetime.now()
 # get soup
 
 startDate = datetime.today()
-endDate = datetime.today() - timedelta(days = 1825) # 5 years
+endDate = datetime.today() - timedelta(days = 365) # Change days to 30/31 for one month
 
 
 
-while startDate > endDate:
+while startDate >= endDate:
     # Change url for next one
     url = "https://www.boe.es/diario_boe/xml.php?id=BOE-S-" + dateToString(startDate)
     
@@ -58,7 +58,7 @@ while startDate > endDate:
             items = department.findAll("item")
             for item in items:
                 url = "https://www.boe.es" + item.urlxml.text
-                licitacion = LBOE(url, False)
+                licitacion = LBOE(url, True)
                 counter += 1
 
         # Change startDate for nexr date
@@ -69,7 +69,7 @@ while startDate > endDate:
 
 # Manage runnable
 end = datetime.now()
-store_runnable(start, end, counter, "Boletín Oficial del Estado", "all")
+store_runnable(start, end, counter, "Boletín Oficial del Estado", "long")
 
 # end
 print("...finished")

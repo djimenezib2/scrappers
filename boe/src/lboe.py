@@ -5,8 +5,8 @@ import os
 import asyncio
 import bugsnag
 
-sys.path.append("../../../../utils")
-sys.path.append("../../../../")
+sys.path.append("../../utils")
+sys.path.append("../../")
 
 from driver import *
 from tokenizer import *
@@ -20,7 +20,7 @@ class LBOE:
     def __init__(self, url, match):
         soup = get_soup_from_url(url, "lxml")
 
-        locationRepository = JSONLocationRepository("../../../../location.json")
+        locationRepository = JSONLocationRepository("../../location.json")
         titulo = self.find_text_by_tag(soup, "titulo")
         
         # ...
@@ -385,10 +385,10 @@ class LBOE:
 
         headers = {
             "Content-Type": "application/json; charset=utf-8",
-            "Api-Key": os.environ["TENDIOS_API_KEY"]
+            "Api-Key": os.environ["API_KEY"]
         }
 
         response = requests.post(
-            os.environ["TENDIOS_API_URL"]+'/v1/tenders/source/boe/create', headers=headers, json=data)
+            os.environ["API_URL"]+'/v1/tenders/source/boe/create', headers=headers, json=data)
 
         print("Status Code", response.status_code)

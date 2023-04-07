@@ -5,8 +5,8 @@ import os
 import asyncio
 from selenium.webdriver.common.by import By
 
-sys.path.append("../../../../utils")
-sys.path.append("../../../../")
+sys.path.append("../../utils")
+sys.path.append("../../")
 
 from driver import *
 from tokenizer import *
@@ -20,7 +20,7 @@ class LTED:
         if(not soup):
             soup = get_soup_from_url(url, "html.parser")
         
-        self.locationRepository = JSONLocationRepository("../../../../location.json")
+        self.locationRepository = JSONLocationRepository("../../location.json")
 
         # Case ted returns an error page
         if bool(soup.body.findAll(text="Error page")):
@@ -309,9 +309,9 @@ class LTED:
 
         headers = {
             "Content-Type": "application/json; charset=utf-8",
-            "Api-Key" : os.environ["TENDIOS_API_KEY"]
+            "Api-Key" : os.environ["API_KEY"]
         }
 
-        response = requests.post(os.environ["TENDIOS_API_URL"]+'/v1/tenders/source/ted/create', headers=headers, json=data)
+        response = requests.post(os.environ["API_URL"]+'/v1/tenders/source/ted/create', headers=headers, json=data)
 
         print("Status Code", response.status_code)

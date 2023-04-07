@@ -6,10 +6,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import StaleElementReferenceException, NoSuchElementException
 from dotenv import load_dotenv
 
-load_dotenv("../../../../.env")
+load_dotenv("../../.env")
 
 sys.path.append("../src")
-sys.path.append("../../../../utils")
+sys.path.append("../../utils")
 
 from driver import *
 from ldre import LDRE

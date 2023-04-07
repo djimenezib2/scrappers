@@ -6,8 +6,8 @@ import os
 import bugsnag
 import asyncio
 
-sys.path.append("../../../../utils")
-sys.path.append("../../../../")
+sys.path.append("../../utils")
+sys.path.append("../../")
 
 from driver import *
 from tokenizer import *
@@ -34,7 +34,7 @@ class LDRE:
             for field in fields:
                 fields[fields.index(field)] = field.get_text(strip=True)
 
-        locationRepository = JSONLocationRepository("../../../../location.json")
+        locationRepository = JSONLocationRepository("../../location.json")
         tenderInformation = self.populateDic(fields, url)
 
         #...
@@ -195,9 +195,9 @@ class LDRE:
 
         headers = {
             "Content-Type": "application/json; charset=utf-8",
-            "Api-Key" : os.environ["TENDIOS_API_KEY"]
+            "Api-Key" : os.environ["API_KEY"]
         }
 
-        response = requests.post(os.environ["TENDIOS_API_URL"]+'/v1/tenders/source/dre/create', headers=headers, json=data)
+        response = requests.post(os.environ["API_URL"]+'/v1/tenders/source/dre/create', headers=headers, json=data)
 
         print("Status Code", response.status_code)

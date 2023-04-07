@@ -1,11 +1,8 @@
 import sys
 import requests
 import re
-import json
 import os
-import time
 import asyncio
-import bugsnag
 from selenium.webdriver.common.by import By
 
 sys.path.append("../../../../utils")
@@ -103,7 +100,7 @@ class LTED:
 
             return item
         except:
-            self.notify_error('TED: Error parsing expedient from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: EXPEDIENT", "error")
+            self.notify_error('TED: Error parsing expedient from ' + self.url_fuente)
             return ""
 
     def get_contractingOrganization(self, soup):
@@ -111,7 +108,6 @@ class LTED:
             item = soup.find_all(text = re.compile("Nombre oficial: "))[0].split("Nombre oficial: ")[1]
             return item
         except:
-            # self.notify_error('TED: Error parsing Contracting Organization from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: Contracting Organization", "warning") 
             return ""
 
     def get_name(self, soup):
@@ -121,7 +117,7 @@ class LTED:
                 element = element + " " + e.get_text(strip=True)
             return element
         except:
-            self.notify_error('TED: Error parsing Name from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: NAME", "error")
+            self.notify_error('TED: Error parsing Name from ' + self.url_fuente)
             return ""
 
     def find_cpv_codes(self, soup, element, attribute_name, attribute_text):
@@ -133,7 +129,6 @@ class LTED:
         
             return codes[:-1]
         except:
-            # self.notify_error('TED: Error parsing CPV Codes from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: CPV Codes", "warning")
             return ""
 
     # self.find_element_text(contenedor, "h1", "class", "notranslate")
@@ -157,7 +152,7 @@ class LTED:
                 status = "No definido"
             return status
         except:
-            self.notify_error('TED: Error parsing Status from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: STATUS", "error")
+            self.notify_error('TED: Error parsing Status from ' + self.url_fuente)
             return ""
 
     def get_contract_type(self, soup):
@@ -165,7 +160,7 @@ class LTED:
             field = soup.select('td:-soup-contains("Tipo de contrato") + td')
             return field[0].text.strip("4 -").strip()
         except:
-            self.notify_error('TED: Error parsing Contract Type from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: CONTRACT TYPE", "error")
+            self.notify_error('TED: Error parsing Contract Type from ' + self.url_fuente)
             return ""
 
     def get_location(self, soup):
@@ -174,7 +169,6 @@ class LTED:
             text = field[0].text
             return text
         except:
-            # self.notify_error('TED: Error parsing Location from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: LOCATION", "warning")
             return ""
 
     def get_dataPage_info(self, soup, info):
@@ -194,7 +188,7 @@ class LTED:
                 return field[0].text
             return field[0].text[3:].strip()
         except:
-            self.notify_error('TED: Error parsing' + searchText + 'from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: " + searchText, "error")
+            self.notify_error('TED: Error parsing' + searchText + 'from ' + self.url_fuente)
             return ""
 
     def get_locationNuts(self, locationRepo, tokens):
@@ -222,7 +216,6 @@ class LTED:
                 field = soup.select('span:-soup-contains("Valor total estimado") + div')
                 return field[0].text.split(": ")[1][:-4].replace(" ", "")
             except:
-                # self.notify_error('TED: Error parsing Budget No Taxes from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: BUDGET NO TAXES", "warning")
                 return None
 
     # Gets all information about successBidderOrganization. Right now only returns the name because is the only information we want, but we could get more from info
@@ -245,7 +238,6 @@ class LTED:
             return info['Nombre oficial']
 
         except Exception:
-            # self.notify_error('TED: Error parsing Success Bidder Organization from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: SUCCESS BIDDER ORGANIZATION", "warning")
             return None
 
     def get_biddersNumber(self, soup):
@@ -253,7 +245,6 @@ class LTED:
             field = soup.find_all(text = re.compile("Número de ofertas recibidas:"))
             return str(re.sub("[^0-9]", "", field[0].text))
         except:
-            # self.notify_error('TED: Error parsing Bidders Number from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: BIDDERS NUMBER", "warning")
             return None
 
     def get_awardAmount(self, soup):
@@ -270,7 +261,6 @@ class LTED:
                 self.moneda = 'Euro'
             return amount
         except:
-            # self.notify_error('TED: Error parsing Award Amount from ' + self.url_fuente, "ERROR!!!\n---------------------\nURL:" + self.url_fuente + "\nError scraping: AWARD AMOUNT", "warning")
             return None
 
     def get_parent_tender_id(self, soup):
@@ -278,14 +268,8 @@ class LTED:
         parent_id = field.find('a').text.split(':')[0]
         return parent_id
 
-    def notify_error(self, bugsnagMessage, errorMessage, severity):
-        try:
-            if os.environ['ENVIRONMENT'] == 'production':
-                bugsnag.notify(Exception(bugsnagMessage), severity=severity)
-            else:
-                print(errorMessage)
-        except:
-            print(errorMessage)
+    def notify_error(self, errorMessage):
+        print(errorMessage)
 
     def is_valid(self):
         return bool(self.expediente) and bool(self.objeto_del_contrato) and bool(self.estado_de_la_licitación)

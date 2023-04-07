@@ -1,8 +1,5 @@
 import sys
-import time
 import re
-import bugsnag
-import os
 from datetime import datetime
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -19,12 +16,6 @@ from lted import LTED
 from runnable import *
 
 # start
-if os.environ['ENVIRONMENT'] == 'production':
-    bugsnag.configure(
-        api_key="31adc527bd20e55d8b1a9672f181b2e1",
-        project_root=os.path.abspath("runnables"),
-    )
-
 print('start...')
 counter = 0
 start = datetime.now()
@@ -75,7 +66,7 @@ while nextPage:
                 if not isTest:
                     licitacion = LTED(url, pageSoup, True)
             except Exception as ex:
-                bugsnag.notify(ex, context="ted_short", metadata={url: url})
+                print("Error")
 
     # if text appears with href we can go to next page
     if bool(driver.find_elements(By.XPATH, "//span[@class='pagelinks']//a[@href][contains(.,'Sig')]")):

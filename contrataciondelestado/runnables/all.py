@@ -9,10 +9,10 @@ import time
 from datetime import datetime
 from dotenv import load_dotenv
 
-load_dotenv("../../../../.env")
+load_dotenv("../../.env")
 
 sys.path.append("../src")
-sys.path.append("../../../../utils")
+sys.path.append("../../utils")
 
 from driver import *
 from lib import *
@@ -102,7 +102,7 @@ for driver in drivers:
 
 # manage runnable
 end = datetime.now()
-store_runnable(start, end, counter, 'Contratacion del Estado', 'long')
+store_runnable(start, end, counter, 'Contratacion del Estado', 'all')
 
 # end
 print('...finished')

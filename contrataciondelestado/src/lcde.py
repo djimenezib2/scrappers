@@ -8,8 +8,8 @@ import bugsnag
 import hashlib
 import zlib
 
-sys.path.append("../../../../utils")
-sys.path.append("../../../../")
+sys.path.append("../../utils")
+sys.path.append("../../")
 
 from pathlib import Path
 from driver import *
@@ -27,7 +27,7 @@ class LCDE:
         if(not soup):
             soup = get_soup_from_url(url, "html.parser")
 
-        locationRepository = JSONLocationRepository("../../../../location.json")
+        locationRepository = JSONLocationRepository("../../location.json")
 
         dates = self.find_dates_from_table(soup)
 
@@ -271,9 +271,9 @@ class LCDE:
 
         headers = {
             "Content-Type": "application/json; charset=utf-8",
-            "Api-Key" : os.environ["TENDIOS_API_KEY"]
+            "Api-Key" : os.environ["API_KEY"]
         }
 
-        response = requests.post(os.environ["TENDIOS_API_URL"]+'/v1/tenders/source/contratacionesdelestado/create', headers=headers, json=data)
+        response = requests.post(os.environ["API_URL"]+'/v1/tenders/source/contratacionesdelestado/create', headers=headers, json=data)
 
         print("Status Code", response.status_code)

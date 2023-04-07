@@ -17,8 +17,8 @@ def store_runnable(start, end, items, source, type):
 
     headers = {
         "Content-Type": "application/json; charset=utf-8",
-        "Api-Key" : os.environ["TENDIOS_API_KEY"]
+        "Api-Key" : os.environ["API_KEY"]
     }
 
-    response = requests.post(os.environ["TENDIOS_API_URL"]+'/v1/runnables', headers=headers, json=data)
+    response = requests.post(os.environ["API_URL"]+'/v1/runnables', headers=headers, json=data)
 

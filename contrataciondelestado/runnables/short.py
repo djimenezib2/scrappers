@@ -7,10 +7,10 @@ import sys
 from datetime import datetime
 from dotenv import load_dotenv
 
-load_dotenv("../../../../.env")
+load_dotenv("../../.env")
 
 sys.path.append("../src")
-sys.path.append("../../../../utils")
+sys.path.append("../../utils")
 
 from driver import *
 from lcde import LCDE

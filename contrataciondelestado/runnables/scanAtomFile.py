@@ -14,10 +14,10 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from dotenv import load_dotenv
 
-load_dotenv("../../../../.env")
+load_dotenv("../../.env")
 
 sys.path.append('./../src')
-sys.path.append("../../../../utils")
+sys.path.append("../../utils")
 
 from lcde import LCDE
 from runnable import *
@@ -114,10 +114,10 @@ def readFile(path):
 
             headers = {
                     "Content-Type": "application/json; charset=utf-8",
-                    "Api-Key" : os.environ["TENDIOS_API_KEY"]
+                    "Api-Key" : os.environ["API_KEY"]
                 }
 
-            response = requests.post(os.environ["TENDIOS_API_URL"]+'/v1/tenders/source/contratacionesdelestado/create', headers=headers, json=data)
+            response = requests.post(os.environ["API_URL"]+'/v1/tenders/source/contratacionesdelestado/create', headers=headers, json=data)
 
             print("Status Code", response.status_code)
         except Exception as ex:

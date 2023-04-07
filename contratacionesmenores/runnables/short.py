@@ -10,10 +10,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from dotenv import load_dotenv
 
-load_dotenv("../../../../.env")
+load_dotenv("../../.env")
 
 sys.path.append("../src")
-sys.path.append("../../../../utils")
+sys.path.append("../../utils")
 
 from driver import *
 from lcm import LCM

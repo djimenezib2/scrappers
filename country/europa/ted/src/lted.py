@@ -63,7 +63,6 @@ class LTED:
             self.parentTenderId                                     = self.get_parent_tender_id(pageSoup)
         #...
         self.match                                              = match
-        save_html(soup, self.expediente)
         self.store()
 
     def correct_location(self):

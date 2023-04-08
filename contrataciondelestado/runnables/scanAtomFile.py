@@ -106,8 +106,6 @@ def readFile(path):
                     'budgetNoTaxes':                budgetNoTaxes,
                     'contractEstimatedValue':       contractEstimatedValue,
                     'successBidderOrganization':    successBidderOrganization,
-                    'match':                        False,
-                    'atom':                         True # only to re run script and force update
                 }
 
             counter += 1

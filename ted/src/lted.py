@@ -62,7 +62,6 @@ class LTED:
             pageSoup                                                = self.switch_to_page(relationsButtonXpath)
             self.parentTenderId                                     = self.get_parent_tender_id(pageSoup)
         #...
-        self.match                                              = match
         self.store()
 
     def correct_location(self):
@@ -304,7 +303,6 @@ class LTED:
             # 'sheets':                       self.sheets,
             'currency':                     self.moneda,
             'parentTenderId':               self.parentTenderId,
-            'match':                        self.match
         }
 
         headers = {

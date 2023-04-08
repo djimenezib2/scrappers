@@ -57,7 +57,6 @@ class LCDE:
         self.importe_adjudicacion                               = self.find_text_by_id(soup, "span", "text_ImporteAdjudicacion")
         self.documents                                          = self.find_documents(soup)
         self.sheets                                             = self.get_sheets()
-        self.match                                              = match
         #...
         self.store()
 
@@ -266,7 +265,6 @@ class LCDE:
             'awardAmount':                  self.importe_adjudicacion,
             'documents':                    self.documents,
             'sheets':                       self.sheets,
-            'match':                        self.match
         }
 
         headers = {

@@ -88,7 +88,7 @@ while(page <= total):
 # manage runnable
 driver.quit()
 end = datetime.now()
-store_runnable(start, end, counter, 'Contrataciones Menores', 'short')
+store_runnable(start, end, counter, 'Contrataciones Menores', 'long')
 
 # end
 print('...finished')
